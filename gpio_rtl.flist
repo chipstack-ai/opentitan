@@ -1,7 +1,7 @@
 +incdir+./extra_files
 +incdir+./hw/ip/prim/rtl
 
-+define+SIMULATION
+//+define+SIMULATION
 +define+DUT_HIER=tb.dut
 
 ./hw/top_earlgrey/rtl/top_pkg.sv

@@ -2,7 +2,7 @@
 +incdir+./hw/ip/aes/model
 +incdir+./hw/ip/prim/rtl
 
-+define+SIMULATION
+//define+SIMULATION
 +define+DUT_HIER=tb.dut
 +define+EN_MASKING=1
 +define+SBOX_IMPL=aes_pkg::SBoxImplDom

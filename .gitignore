@@ -95,3 +95,12 @@ book
 
 # Hugo Lock
 .hugo_build.lock
+
+# chipstack artifacts
+chipstack_artifacts
+
+#ingore tar
+*.tar
+
+# ignore .DS_Store
+.DS_Store

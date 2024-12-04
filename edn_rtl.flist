@@ -1,8 +1,8 @@
 +incdir+./extra_files
 +incdir+./hw/ip/prim/rtl
 
-+define+SIMULATION
-+define+DUT_HIER=tb.dut
+//+define+SIMULATION
+//+define+DUT_HIER=tb.dut
 
 ./hw/top_earlgrey/rtl/top_pkg.sv
 ./hw/ip/entropy_src/rtl/entropy_src_pkg.sv
