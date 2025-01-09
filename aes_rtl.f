@@ -1,3 +1,11 @@
+--libext svh
+
+-v./hw/ip/prim/rtl/prim_assert_standard_macros.svh
+-v./extra_files/prim_buf.sv 
+-v./extra_files/prim_pkg.sv 
+-v./extra_files/prim_flop.sv 
+prim_assert_yosys_macros.svh
+
 +incdir+./extra_files
 +incdir+./hw/ip/aes/model
 +incdir+./hw/ip/prim/rtl
@@ -8,10 +16,9 @@
 +define+EN_MASKING=1
 +define+SBOX_IMPL=aes_pkg::SBoxImplDom
 
+./extra_files/prim_flop_2sync.sv
 ./hw/top_earlgrey/rtl/top_pkg.sv
 ./hw/ip/entropy_src/rtl/entropy_src_pkg.sv
-./hw/ip/aes/model/crypto.c
-./hw/ip/aes/model/aes.c
 ./extra_files//prim_pkg.sv
 ./hw/ip/prim/rtl/prim_cipher_pkg.sv
 ./hw/ip/prim_generic/rtl/prim_generic_and2.sv
