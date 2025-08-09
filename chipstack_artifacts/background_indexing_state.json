@@ -1,0 +1,86 @@
+{
+  "uploaded_files": {},
+  "file_statuses": {
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_reg_top.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_reg_top.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:55:33.661000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_control.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_control.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:55:37.986000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/prim/rtl/prim_sync_reqack_data.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/prim/rtl/prim_sync_reqack_data.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:55:41.378000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/prim/rtl/prim_lc_sync.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/prim/rtl/prim_lc_sync.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:55:44.780000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T02:16:37.802000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_core.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_core.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:55:51.807000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_prng_clearing.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_prng_clearing.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:56:28.528000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/prim/rtl/prim_alert_sender.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/prim/rtl/prim_alert_sender.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:56:35.340000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_ctr.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_ctr.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:56:57.358000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_cipher_core.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_cipher_core.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:57:06.768000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_ctrl_reg_shadowed.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_ctrl_reg_shadowed.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T01:57:25.102000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/twist/rtl/aes_twist.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/twist/rtl/aes_twist.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T02:27:44.855000+00:00"
+    },
+    "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_twist.sv": {
+      "filename": "/Users/javad/dev/chipstack-opentitan/hw/ip/aes_twist/rtl/aes_twist.sv",
+      "state": "Indexed",
+      "error": null,
+      "updateTime": "2025-08-09T02:29:43.741000+00:00"
+    }
+  },
+  "last_started": null,
+  "last_updated": "2025-08-08T19:42:57.673604",
+  "files_discovered": 0
+}
