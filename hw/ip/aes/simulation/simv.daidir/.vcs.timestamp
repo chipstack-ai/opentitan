@@ -1,0 +1,370 @@
+12       
+0 prim_assert.sv
+0 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/etc/systemverilog/prim_assert.sv
+0 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/prim_assert.sv
+0 prim_assert_dummy_macros.svh
+0 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/etc/systemverilog/prim_assert_dummy_macros.svh
+0 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/prim_assert_dummy_macros.svh
+0 prim_assert_sec_cm.svh
+0 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/etc/systemverilog/prim_assert_sec_cm.svh
+0 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/prim_assert_sec_cm.svh
+0 prim_flop_macros.sv
+0 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/etc/systemverilog/prim_flop_macros.sv
+0 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/prim_flop_macros.sv
+164
++ENABLE_FSDB_DUMP=1
++define+SYNTHESIS
++define+VCS
++define+WAVES_AS_FSDB
++incdir+../csrng/rtl
++incdir+../edn/rtl
++incdir+../entropy_src/rtl
++incdir+../keymgr/rtl
++incdir+../lc_ctrl/rtl
++incdir+../prim/rtl
++incdir+../tlul/rtl
++incdir+rtl
++itf+/var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/vcsdp_lite.tab
++ntb_random_seed=-1
++v2k
++vcs+lic+wait
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/var/synopsys/installations/vcs/vcs/W-2024.09-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/libvirsim.so /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/liberrorinf.so /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/libsnpsmalloc.so /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/home/synopsys/tools/verdi/verdi/W-2024.09-SP1-1/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/var/synopsys/installations/vcs/vcs/W-2024.09-SP1/include
+-Mxllcflags=
+-P
+-Xfile_begin_F=/home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/aes_rtl.filelist
+-Xfile_begin_F=aes_edn_handshake.f
+-Xfile_end
+-Xfile_end
+-Xufe=2steps
+-Xufe=2steps
+-Xufe=2steps
+-Xufe=2steps
+-Xvcs_run_simv=1
+-cm
+-cm
+-cm_hier
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-kdb
+-kdb=common_elab
+-kdb=common_elab
+-kdb=common_elab
+-l
+-lca
+-lca
+-ntb
+-picarchive
+-sverilog
+-timescale=1ns/100ps
+-top
+/var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/bin/vcs1
+simulation.log
+line+tgl+fsm+cond+branch
+cover.cfg
+tb_aes_edn_handshake
+line+tgl+fsm+cond+branch
+/home/synopsys/tools/verdi/verdi/W-2024.09-SP1-1/share/PLI/VCS/LINUX64/verdi.tab
+../../top_earlgrey/rtl/top_pkg.sv
+../prim/rtl/prim_secded_pkg.sv
+../prim/rtl/prim_util_pkg.sv
+../prim/rtl/prim_mubi_pkg.sv
+../prim/rtl/prim_alert_pkg.sv
+../tlul/rtl/tlul_pkg.sv
+../lc_ctrl/rtl/lc_ctrl_state_pkg.sv
+../lc_ctrl/rtl/lc_ctrl_reg_pkg.sv
+../lc_ctrl/rtl/lc_ctrl_pkg.sv
+../entropy_src/rtl/entropy_src_pkg.sv
+../csrng/rtl/csrng_pkg.sv
+../edn/rtl/edn_pkg.sv
+../keymgr/rtl/keymgr_reg_pkg.sv
+../keymgr/rtl/keymgr_pkg.sv
+rtl/aes_reg_pkg.sv
+rtl/aes_pkg.sv
+../prim/rtl/prim_assert.sv
+../prim/rtl/prim_sparse_fsm_flop.sv
+../prim/rtl/prim_sync_reqack_data.sv
+../prim/rtl/prim_lc_sync.sv
+../prim/rtl/prim_sync_reqack.sv
+../prim/rtl/prim_subreg_pkg.sv
+../prim/rtl/prim_subreg.sv
+../prim/rtl/prim_subreg_ext.sv
+../prim/rtl/prim_subreg_shadow.sv
+../prim/rtl/prim_reg_we_check.sv
+../prim/rtl/prim_subreg_arb.sv
+../prim/rtl/prim_onehot_check.sv
+../tlul/rtl/tlul_adapter_reg.sv
+../tlul/rtl/tlul_cmd_intg_chk.sv
+../tlul/rtl/tlul_rsp_intg_gen.sv
+../tlul/rtl/tlul_err.sv
+../tlul/rtl/tlul_data_integ_dec.sv
+../tlul/rtl/tlul_data_integ_enc.sv
+../prim/rtl/prim_diff_decode.sv
+../prim/rtl/prim_sec_anchor_buf.sv
+../prim/rtl/prim_sec_anchor_flop.sv
+../prim/rtl/prim_alert_receiver.sv
+../prim/rtl/prim_alert_sender.sv
+../prim/rtl/prim_cipher_pkg.sv
+../prim/rtl/prim_trivium_pkg.sv
+rtl/prim_dummy_trivium.sv
+../prim/rtl/prim_packer.sv
+../prim/rtl/prim_packer_fifo.sv
+../prim/rtl/prim_lfsr.sv
+../prim/rtl/prim_cdc_rand_delay.sv
+../prim/rtl/prim_secded_inv_64_57_dec.sv
+../prim/rtl/prim_secded_inv_39_32_dec.sv
+../prim/rtl/prim_secded_inv_64_57_enc.sv
+../prim/rtl/prim_secded_inv_39_32_enc.sv
+../prim_generic/rtl/prim_generic_buf.sv
+../prim_generic/rtl/prim_generic_flop.sv
+../prim_generic/rtl/prim_generic_flop_2sync.sv
+../prim_generic/rtl/prim_generic_flop_en.sv
+../../vendor/lowrisc_ibex/dv/uvm/core_ibex/common/prim/prim_buf.sv
+../../vendor/lowrisc_ibex/dv/uvm/core_ibex/common/prim/prim_flop.sv
+rtl/prim_compat_wrappers.sv
+rtl/aes_ctrl_reg_shadowed.sv
+rtl/aes_reg_status.sv
+rtl/aes_cipher_control_fsm_n.sv
+rtl/aes_cipher_control_fsm_p.sv
+rtl/aes_cipher_control_fsm.sv
+rtl/aes_cipher_control.sv
+rtl/aes_control_fsm_p.sv
+rtl/aes_control_fsm_n.sv
+rtl/aes_control_fsm.sv
+rtl/aes_control.sv
+rtl/aes_cipher_core.sv
+rtl/aes_ctr_fsm_n.sv
+rtl/aes_ctr_fsm_p.sv
+rtl/aes_ctr_fsm.sv
+rtl/aes_ctr.sv
+rtl/aes_key_expand.sv
+rtl/aes_mix_columns.sv
+rtl/aes_mix_single_column.sv
+rtl/aes_prng_clearing.sv
+rtl/aes_prng_masking.sv
+rtl/aes_reduced_round.sv
+rtl/aes_sbox_canright_pkg.sv
+rtl/aes_sbox_canright_masked_noreuse.sv
+rtl/aes_sbox_canright_masked.sv
+rtl/aes_sbox_canright.sv
+rtl/aes_sbox_dom.sv
+rtl/aes_sbox_lut.sv
+rtl/aes_sbox.sv
+rtl/aes_sel_buf_chk.sv
+rtl/aes_shift_rows.sv
+rtl/aes_sub_bytes.sv
+rtl/aes_core.sv
+rtl/aes_reg_top.sv
+rtl/aes.sv
+/home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/simulation/tb_aes_edn_handshake.sv
+simv.vdb
+79
+which_declare=declare -f
+XDG_SESSION_ID=346
+XDG_RUNTIME_DIR=/run/user/1021
+XDG_DATA_DIRS=/home/shivang-chipstack/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VSCODE_IPC_HOOK_CLI=/run/user/1021/vscode-ipc-25467714-13f2-414d-b64e-ffd88d3cc22a.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1021/vscode-git-4c18ecd8e4.sock
+VSCODE_GIT_ASKPASS_NODE=/home/shivang-chipstack/.vscode-server/cli/servers/Stable-2901c5ac6db8a986a5666c3af51ff804d05af0d4/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/shivang-chipstack/.vscode-server/cli/servers/Stable-2901c5ac6db8a986a5666c3af51ff804d05af0d4/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=/home/shivang-chipstack/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-2342750be8d2e3ff.txt
+VMR_MODE_FLAG=64
+VERDI_TARGET_ARCH=linux64
+VERDI_HOME=/home/synopsys/tools/verdi/verdi/W-2024.09-SP1-1
+VC_STATIC_HOME=/home/synopsys/tools/vcformal/vc_formal/V-2023.12-SP2-5
+VCS_TARGET_ARCH=linux64
+VCS_PYTHON3=/var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/bin/Python3/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=simulation.log
+VCS_LCAMSG_PRINT_OFF=1
+VCS_INTERNAL_CONVERTEDLIBS=
+VCS_HOME=/var/synopsys/installations/vcs/vcs/W-2024.09-SP1
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64
+TERM_PROGRAM_VERSION=1.101.2
+TERM_PROGRAM=vscode
+TCL_LIBRARY=/usr/share/tcl8.6/
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+SSL_CERT_DIR=/etc/pki/tls/certs
+SSH_CONNECTION=108.205.53.79 57770 192.168.3.7 22
+SSH_CLIENT=108.205.53.79 57770 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_VHDL_WRAPPER_KDB=1
+SNPS_VCS_PYTHON3=/var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/bin/Python3/bin/python3
+SNPS_VCS_CLANG_PATH=/var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+PYDEVD_DISABLE_FILE_VALIDATION=1
+OVA_UUM=0
+NVM_INC=/home/shivang-chipstack/.nvm/versions/node/v22.17.0/include/node
+NVM_DIR=/home/shivang-chipstack/.nvm
+NVM_CD_FLAGS=
+NVM_BIN=/home/shivang-chipstack/.nvm/versions/node/v22.17.0/bin
+NOVAS_HOME=/home/synopsys/tools/verdi/verdi/W-2024.09-SP1-1
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+MODULESHOME=/usr/share/Modules
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+HISTCONTROL=ignoredups
+GIT_ASKPASS=/home/shivang-chipstack/.vscode-server/cli/servers/Stable-2901c5ac6db8a986a5666c3af51ff804d05af0d4/server/extensions/git/dist/askpass.sh
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1021/bus
+CONDA_SHLVL=1
+CONDA_PYTHON_EXE=/home/shivang-chipstack/miniconda3/bin/python
+CONDA_PROMPT_MODIFIER=(base) 
+CONDA_PREFIX=/home/shivang-chipstack/miniconda3
+CONDA_EXE=/home/shivang-chipstack/miniconda3/bin/conda
+CONDA_DEFAULT_ENV=base
+COLORTERM=truecolor
+CDS_LIC_FILE=5280@cadence-license-server
+CDS_INST_DIR=/home/cadence/tools/xcelium
+CDS_HOME=/home/cadence/tools/xcelium/tools.lnx86/bin/64bit
+BUNDLED_DEBUGPY_PATH=/home/shivang-chipstack/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;_ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then_ typeset swname='main';_ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then_ typeset swfound=0;_ unset MODULES_USE_COMPAT_VERSION;_ fi;_ else_ typeset swname='compatibility';_ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then_ typeset swfound=0;_ MODULES_USE_COMPAT_VERSION=1;_ export MODULES_USE_COMPAT_VERSION;_ fi;_ fi;_ if [ $swfound -eq 0 ]; then_ echo "Switching to Modules $swname version";_ source /usr/share/Modules/init/bash;_ else_ echo "Cannot switch to Modules $swname version, command not found";_ return 1;_ fi_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1_}
+BASH_FUNC_ml%%=() {  module ml "$@"_}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
+0
+0
+102
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_flop_macros.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_assert_sec_cm.svh
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_assert_dummy_macros.svh
+1755370490 simv.vdb
+1755371154 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/simulation/tb_aes_edn_handshake.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_reg_top.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_core.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_sub_bytes.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_shift_rows.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_sel_buf_chk.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_sbox.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_sbox_lut.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_sbox_dom.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_sbox_canright.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_sbox_canright_masked.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_sbox_canright_masked_noreuse.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_sbox_canright_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_reduced_round.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_prng_masking.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_prng_clearing.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_mix_single_column.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_mix_columns.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_key_expand.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_ctr.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_ctr_fsm.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_ctr_fsm_p.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_ctr_fsm_n.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_cipher_core.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_control.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_control_fsm.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_control_fsm_n.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_control_fsm_p.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_cipher_control.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_cipher_control_fsm.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_cipher_control_fsm_p.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_cipher_control_fsm_n.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_reg_status.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_ctrl_reg_shadowed.sv
+1755364781 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/prim_compat_wrappers.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../../vendor/lowrisc_ibex/dv/uvm/core_ibex/common/prim/prim_flop.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../../vendor/lowrisc_ibex/dv/uvm/core_ibex/common/prim/prim_buf.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim_generic/rtl/prim_generic_flop_en.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim_generic/rtl/prim_generic_flop_2sync.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim_generic/rtl/prim_generic_flop.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim_generic/rtl/prim_generic_buf.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_secded_inv_39_32_enc.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_secded_inv_64_57_enc.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_secded_inv_39_32_dec.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_secded_inv_64_57_dec.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_cdc_rand_delay.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_lfsr.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_packer_fifo.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_packer.sv
+1755364990 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/prim_dummy_trivium.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_trivium_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_cipher_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_alert_sender.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_alert_receiver.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_sec_anchor_flop.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_sec_anchor_buf.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_diff_decode.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../tlul/rtl/tlul_data_integ_enc.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../tlul/rtl/tlul_data_integ_dec.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../tlul/rtl/tlul_err.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../tlul/rtl/tlul_rsp_intg_gen.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../tlul/rtl/tlul_cmd_intg_chk.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../tlul/rtl/tlul_adapter_reg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_onehot_check.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_subreg_arb.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_reg_we_check.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_subreg_shadow.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_subreg_ext.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_subreg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_subreg_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_sync_reqack.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_lc_sync.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_sync_reqack_data.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_sparse_fsm_flop.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_assert.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/rtl/aes_reg_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../keymgr/rtl/keymgr_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../keymgr/rtl/keymgr_reg_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../edn/rtl/edn_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../csrng/rtl/csrng_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../entropy_src/rtl/entropy_src_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../lc_ctrl/rtl/lc_ctrl_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../lc_ctrl/rtl/lc_ctrl_reg_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../lc_ctrl/rtl/lc_ctrl_state_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../tlul/rtl/tlul_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_alert_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_mubi_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_util_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../prim/rtl/prim_secded_pkg.sv
+1754003956 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../../top_earlgrey/rtl/top_pkg.sv
+1733285141 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/include/cm_vcsd.tab
+1755365001 /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/aes_rtl.filelist
+1755371052 aes_edn_handshake.f
+1736657566 /home/synopsys/tools/verdi/verdi/W-2024.09-SP1-1/share/PLI/VCS/LINUX64/verdi.tab
+1755370479 cover.cfg
+1733285154 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/vcsdp_lite.tab
+4
+1733288192 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/libvirsim.so
+1733286010 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/liberrorinf.so
+1733286000 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/libsnpsmalloc.so
+1733285992 /var/synopsys/installations/vcs/vcs/W-2024.09-SP1/linux64/lib/libvfs.so
+1755371256 simv.daidir
+-1 partitionlib

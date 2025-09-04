@@ -1,0 +1,2 @@
+-F /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/aes_rtl.filelist
+/home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/simulation/tb_aes_edn_handshake.sv

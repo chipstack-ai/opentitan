@@ -1,0 +1,13 @@
+#!/bin/bash
+
+codex --full-auto " You are working on generating a complete, syntax free, logically correct system verilog testbench code for EdnEntropyRequestAndHandshake test explained in /home/shivang-chipstack/git_repos/chipstack-ai/chipstack_artifacts/simulation/scenarios.md test plan. The system verilog testbench module you generate should have DUT instantiation, clock and reset generation, and all required tasks to complete the purpose of EdnEntropyRequestAndHandshake test. You can create a new filelist which includes RTL filelist and the testbench module as well. To see if your code is syntax free, you can use the below tool for compile check. To run compile check: \
+Command to check compile pass: /home/shivang-chipstack/.vscode-server/extensions/chipstackinc.chipstack-0.62.0/dist/chipstack_cli/chipstack_cli eda parse --filelists <path_to_filelist_with_RTL_filelist_and_TB_mdoule>--top-module <name_of_top_level_TB_module> --output-path /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/chipstack_artifacts/simulation. You continue to iterate until you get compile passing.  You can use /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/chipstack_artifacts/simulation directory for generating simulation test bench and all other required artifacts.Make sure you never generate zero delay infinite loop in the code. Also add watchdog timeout logic in the test to exit simulation if the test runs for a long time. \
+Once you compile the test bench correctly, you need to run a VCS simulation tool to see if the test is passing or not. Below is how you run VCS: \
+- You can run vcs with coverage from commandline using: \
+vcs -licqueue -ntb -lca -full64 \
+   +define+VCS +define+WAVES_AS_FSDB \
+   -kdb -debug_access+all +v2k -sverilog -timescale=1ns/100ps \
+   -cm line+tgl+fsm+cond+branch -cm_hier cover.cfg \
+   -l simulation.log -F <FILELIST_PATH.f> <testbench_name>.sv -top <tb_top_module_name> \
+   -R +ntb_random_seed=-1 -lca +ENABLE_FSDB_DUMP=1 -cm line+tgl+fsm+cond+branch -dir simv.vdb \
+Continue to iterate on the fixing the test bench until you get it pass. Make sure your goal is to generate logically correct test bench which serves the purpose of the test and get it syntactically passing and pass simulation via VCS as well. Do not make any changes to RTL. Limit your changes only within the files inside /home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/chipstack_artifacts/simulation directory. "

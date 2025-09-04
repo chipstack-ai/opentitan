@@ -1,0 +1,2 @@
+\$unit::/home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../../top_earlgrey/rtl/top_pkg.sv::/home/shivang-chipstack/git_repos/chipstack-beta/playground/opentitan/opentitan/hw/ip/aes/../../vendor/lowrisc_ibex/dv/uvm/core_ibex/common/prim/prim_buf.sv...@2825523500 00
+tb_aes_edn_handshake00
