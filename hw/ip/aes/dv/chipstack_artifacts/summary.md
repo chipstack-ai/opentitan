@@ -13,7 +13,7 @@ Git branch: `shivang-chipstack-chipstack-aes-constraints`
 
 PR and commit:
 - PR: https://github.com/chipstack-ai/opentitan/pull/9
-- Head commit: `59be3d9b80512b328baf54c24aa774f43158621f`
+- Head commit: `21f346aebad3f8a3e5cad780c3fb277b1074548b`
 
 Confidence: High
 
