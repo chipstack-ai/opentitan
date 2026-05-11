@@ -3,6 +3,7 @@
 +incdir+./hw/dv/sv/common_ifs
 
 +define+SIMULATION
++define+SYNTHESIS
 +define+DUT_HIER=tb.dut
 +define+XCELIUM
 
@@ -83,6 +84,7 @@
 ./hw/ip/otp_ctrl/rtl/otp_ctrl_reg_pkg.sv
 ./hw/ip/otp_ctrl/rtl/otp_ctrl_pkg.sv
 ./hw/ip/otp_ctrl/rtl/otp_ctrl_part_pkg.sv
+./hw/dv/sv/common_ifs/pins_if.sv
 ./hw/ip/prim/rtl/prim_fifo_async_sram_adapter.sv
 ./hw/ip/prim/rtl/prim_fifo_async_simple.sv
 ./hw/ip/prim/rtl/prim_fifo_async.sv
@@ -190,22 +192,33 @@
 ./hw/ip/prim_generic/rtl/prim_generic_xor2.sv
 ./hw/ip/prim_generic/rtl/prim_generic_clock_mux2.sv
 ./hw/ip/prim_generic/rtl/prim_generic_clock_inv.sv
+./hw/ip/prim_generic/rtl/prim_generic_clock_gating.sv
+./hw/ip/prim_generic/rtl/prim_generic_clock_div.sv
+./hw/ip/prim_generic/rtl/prim_generic_clock_buf.sv
 ./hw/ip/prim_generic/rtl/prim_generic_pad_wrapper.sv
+./hw/ip/prim_generic/rtl/prim_generic_pad_attr.sv
 ./hw/ip/prim_generic/rtl/prim_generic_otp.sv
 ./hw/ip/prim_generic/rtl/prim_generic_ram_1p.sv
 ./hw/ip/prim_xilinx/rtl/prim_xilinx_and2.sv
 ./hw/ip/prim_xilinx/rtl/prim_xilinx_buf.sv
+./hw/ip/prim_xilinx/rtl/prim_xilinx_clock_buf.sv
+./hw/ip/prim_xilinx/rtl/prim_xilinx_clock_gating.sv
 ./hw/ip/prim_xilinx/rtl/prim_xilinx_clock_mux2.sv
 ./hw/ip/prim_xilinx/rtl/prim_xilinx_flop.sv
 ./hw/ip/prim_xilinx/rtl/prim_xilinx_flop_en.sv
+./hw/ip/prim_xilinx/rtl/prim_xilinx_pad_attr.sv
 ./hw/ip/prim_xilinx/rtl/prim_xilinx_pad_wrapper.sv
 ./hw/ip/prim_xilinx/rtl/prim_xilinx_xor2.sv
 ./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_and2.sv
 ./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_buf.sv
+./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_clock_buf.sv
+./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_clock_div.sv
+./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_clock_gating.sv
 ./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_clock_inv.sv
 ./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_clock_mux2.sv
 ./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_flop.sv
 ./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_flop_en.sv
+./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_pad_attr.sv
 ./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_pad_wrapper.sv
 ./hw/ip/prim_xilinx_ultrascale/rtl/prim_xilinx_ultrascale_xor2.sv
 ./extra_files/prim_buf.sv
@@ -218,5 +231,6 @@
 ./extra_files/prim_pad_wrapper.sv
 ./extra_files/prim_clock_inv.sv
 ./extra_files/prim_clock_mux2.sv
+./extra_files/prim_clock_buf.sv
 ./extra_files/prim_ram_1p.sv
 ./extra_files/prim_otp.sv
