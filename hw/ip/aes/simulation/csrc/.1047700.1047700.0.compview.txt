@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1755371252.066839546, "rt":3.43, "ut":3.28, "st":0.39}}
+{"vcselab":{"timestamp_begin":1755371255.585883962, "rt":0.36, "ut":0.24, "st":0.09}}
+{"link":{"timestamp_begin":1755371256.027178895, "rt":0.26, "ut":0.14, "st":0.12}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1755371250.956436929}
+{"VCS_COMP_START_TIME": 1755371250.956436929}
+{"VCS_COMP_END_TIME": 1755371256.809459889}
+{"VCS_USER_OPTIONS": "-licqueue -ntb -lca -full64 +define+VCS +define+WAVES_AS_FSDB -kdb -debug_access+all +v2k -sverilog -timescale=1ns/100ps -cm line+tgl+fsm+cond+branch -cm_hier cover.cfg -l simulation.log -F aes_edn_handshake.f -top tb_aes_edn_handshake -R +ntb_random_seed=-1 -lca +ENABLE_FSDB_DUMP=1 -cm line+tgl+fsm+cond+branch -dir simv.vdb"}
+{"vcs1": {"peak_mem": 478576}}
+{"vcselab": {"peak_mem": 188044}}

@@ -35,6 +35,11 @@ class aes_seq_item extends uvm_sequence_item;
   aes_mode_e      mode;
   bit [2:0]       reseed_rate;
 
+  // Optional randomization enables (kept off by default for compatibility)
+  bit             randomize_operation_en = 0;
+  bit             randomize_key_len_en   = 0;
+  bit             randomize_data_len_en  = 0;
+
   bit             en_b2b_transactions  = 1;
   int             b2b_pct              = 80;
 
@@ -78,6 +83,13 @@ class aes_seq_item extends uvm_sequence_item;
   // used by the checker
   rand  bit [3:0][31:0]             data_in;
 
+  // Optional randomized selectors for additional coverage
+  rand  bit [1:0]                   operation_rand;
+  rand  bit [2:0]                   key_len_rand;
+  rand  bit [3:0]                   data_len_rand;
+  rand  int unsigned                data_pattern_sel;
+  rand  int unsigned                iv_pattern_sel;
+
   // back to back
   rand bit                          do_b2b;
 
@@ -93,6 +105,48 @@ class aes_seq_item extends uvm_sequence_item;
   // [1] IV
   // [0] key
   rand clear_t                      clear_reg;
+
+  // Additional constraints to improve coverage (gated by enable knobs)
+  // Randomize operation with equal ENC/DEC distribution when enabled
+  constraint operation_rand_c {
+    if (randomize_operation_en) {
+      operation_rand dist { AES_ENC :/ 50,
+                            AES_DEC :/ 50 };
+    }
+  }
+
+  // Randomize key length across 128/192/256 when enabled
+  constraint key_len_rand_c {
+    if (randomize_key_len_en) {
+      key_len_rand dist { 3'b001 :/ 33,
+                          3'b010 :/ 33,
+                          3'b100 :/ 34 };
+    }
+  }
+
+  // Randomize data length with bias to edge cases when enabled
+  constraint data_len_rand_c {
+    if (randomize_data_len_en) {
+      data_len_rand dist { 4'd0  :/ 3,   // full block
+                           4'd1  :/ 3,   // single byte
+                           4'd15 :/ 3,   // all but one byte
+                           [4'd2:4'd14] :/ 7 };
+    }
+  }
+
+  // Select corner-case patterns occasionally for data and IV
+  constraint data_pattern_sel_c { data_pattern_sel dist { 0 :/ 5,  // all zeros
+                                                          1 :/ 5,  // all ones
+                                                          2 :/ 5,  // 0xAA/0x55
+                                                          3 :/ 5,  // ascending bytes
+                                                          4 :/ 80  // fully random
+                                                        };}
+  constraint iv_pattern_sel_c   { iv_pattern_sel   dist { 0 :/ 5,
+                                                          1 :/ 5,
+                                                          2 :/ 5,
+                                                          3 :/ 5,
+                                                          4 :/ 80
+                                                        };}
 
   constraint aes_mode_c {
    // force to be !onehot
@@ -122,7 +176,7 @@ class aes_seq_item extends uvm_sequence_item;
       do_b2b dist { 0 :/ (100-b2b_pct),
                     1 :/ b2b_pct };
     } else {
-      do_b2b == 0
+      do_b2b == 0;
     };
   }
 
@@ -134,7 +188,61 @@ class aes_seq_item extends uvm_sequence_item;
 
   function void post_randomize();
     bit [3:0]           index;
+    bit [127:0]         tmp_data;
     `uvm_info(`gfn, $sformatf("Key Mask %b", key_mask), UVM_LOW)
+
+    // Optionally apply randomized knobs to main fields
+    if (randomize_operation_en) operation = operation_rand;
+    if (randomize_key_len_en)   key_len   = key_len_rand;
+    if (randomize_data_len_en)  data_len  = data_len_rand;
+
+    // Apply corner-case patterns to data_in while keeping random as default
+    unique case (data_pattern_sel)
+      0: begin
+        data_in = '0;
+      end
+      1: begin
+        data_in = '1;
+      end
+      2: begin
+        // Alternate 0xAA / 0x55 across words
+        for (int i = 0; i < 4; i++) begin
+          data_in[i] = (i % 2 == 0) ? 32'hAAAA_AAAA : 32'h5555_5555;
+        end
+      end
+      3: begin
+        // Ascending byte values across 128b
+        for (int i = 0; i < 16; i++) begin
+          data_in[i[3:2]][i[1:0]*8 +: 8] = 8'(i);
+        end
+      end
+      default: begin
+        // leave randomized value as-is
+      end
+    endcase
+
+    // Apply corner-case patterns to IV with same selector scheme
+    unique case (iv_pattern_sel)
+      0: begin
+        iv = '{default: 32'h0};
+      end
+      1: begin
+        iv = '{default: 32'hFFFF_FFFF};
+      end
+      2: begin
+        for (int i = 0; i < 4; i++) begin
+          iv[i] = (i % 2 == 0) ? 32'hAAAA_AAAA : 32'h5555_5555;
+        end
+      end
+      3: begin
+        for (int i = 0; i < 16; i++) begin
+          iv[i[3:2]][i[1:0]*8 +: 8] = 8'(i);
+        end
+      end
+      default: begin
+        // leave as-is
+      end
+    endcase
     if (key_mask) begin
       case (key_len)
         3'b001: begin
@@ -306,6 +414,10 @@ class aes_seq_item extends uvm_sequence_item;
     data_was_cleared = rhs_.data_was_cleared;
     sideload_en      = rhs_.sideload_en;
     reseed_rate      = rhs_.reseed_rate;
+    // Copy optional randomization enable knobs to preserve behavior
+    randomize_operation_en = rhs_.randomize_operation_en;
+    randomize_key_len_en   = rhs_.randomize_key_len_en;
+    randomize_data_len_en  = rhs_.randomize_data_len_en;
   endfunction // copy
 
 
